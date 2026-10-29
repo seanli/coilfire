@@ -1,4 +1,4 @@
-const CACHE = 'coilfire-b8e576ffe4';
+const CACHE = 'coilfire-ea544588a0';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {
